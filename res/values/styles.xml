@@ -1,0 +1,39 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <color name="red_apple">#FFFF3333</color>
+    <color name="gray">#f2f2f1</color>
+    <color name="pink">#70FF3399</color>
+    <color name="orange">#FFFF8800</color>
+    <color name="white">#FFFFFFFF</color>
+    
+     <style name="PinkActionTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/blue_bg</item>
+       
+    </style>
+    <color name="blue_soft">#19A3FF</color>
+    <color name="blue_bg">#1aae5c</color>
+    <color name="black_soft">#060606</color>
+    <color name="gray_text">#7B7B7B</color>
+
+</resources>

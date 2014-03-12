@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutWidget"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dip"
+    android:background="@drawable/myshape"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layoutCalender"
+        android:layout_width="64dp"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/layoutIdiom"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvUpdateDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:paddingTop="5dp"
+            android:text="Monday"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvUpdateDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text="30"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center"
+            android:background="@color/white" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvUpdateMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text="12"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/layoutIdiom"
+        android:layout_toRightOf="@+id/layoutCalender"
+        android:background="@color/white" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutIdiom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/layoutCalender"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvUpdateEnglish"
+            style="@android:style/TextAppearance.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Today was good. Today was fun. Tomorrow is another one."
+            android:layout_margin="4dip"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/tvUpdateVietnamese"
+            style="@android:style/TextAppearance.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dip"
+            android:text="Today was good. Today was fun. Tomorrow is another one."
+            android:gravity="left|center_vertical"
+            android:textColor="@color/blue_soft"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/tvUpdateAuthor"
+            style="@android:style/TextAppearance.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dip"
+            android:gravity="right"
+            android:text="Dr. Seuss."
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>
